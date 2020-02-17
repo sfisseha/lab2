@@ -9,14 +9,22 @@
 
 
   <body>
+    <a href="#title1" class="skip">Skip to content</a>
+    <div class="main-content" role="main" aria-labelledby="title1">
     <h1>Triangles!</h1>
-    <form class="main-content" role="main" aria-labelledby="title1">
-      <label id="title1">Input three numbers for the side length of a triangle: </label>
-      <div><input type="number" id="first_num" placeholder="1st side"></div>
-      <div><input type="number" id="second_num" placeholder="2nd side"></div>
-      <div><input type="number" id="third_num" placeholder="3rd side"></div>
-      <button type="submit" id="sumbitButton" onClick="compareNum();">Submit</button>
-    </form>
+    <h3>Learn interesting facts about triangles!</h3>
+      <p id="title1">Fill in three numbers for the side length of a triangle: </p>
+      <div class="input"><label for="first_num">1st side length:  </label>
+      <input type="number" id="first_num"></div>
+
+      <div class="input"><label for="second_num">2nd side length: </label>
+      <input type="number" id="second_num"></div>
+
+      <div class="input"><label for="third_num">3rd side length: </label>
+      <input type="number" id="third_num"></div>
+
+      <div class="btn"><button type="submit" id="sumbitButton" onClick="compareNum();">Submit</button></div>
+    </div>
     <script src="triangle.js"></script>
   </body>
 </html>
