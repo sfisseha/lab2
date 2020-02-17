@@ -36,10 +36,30 @@ function compareNum(){
       document.write("<h3>Angle 1: </h3>", angle1.toPrecision(3));
       document.write("<h3>Angle 2: </h3>", angle2.toPrecision(3));
       document.write("<h3>Angle 3: </h3>", angle3.toPrecision(3));
-        //insert calculation for perimeter, area and type of triangle!!!
-        
-    }else{
-      return document.write("<h1>The side lengths don't make up a triangle, try again :)</h1>");
+
+      if(angle1 < 90 && angle2 < 90 && angle3 < 90){
+        document.write("<h3> It is an acute triangle</h3>");
+      }
+
+      if(angle1 > 90 || angle2 > 90 || angle3 > 90){
+        document.write("<h3> It is an obtuse triangle</h3>");
+      }
+
+      if(angle1=== 90 || angle2 === 90 || angle3 === 90){
+        document.write("<h3> It is an right triangle</h3>");
+      }
+
+
+      var perimeter= num1 + num2 + num3;
+      document.write("<h3>The perimeter is ", perimeter);
+
+      //using Heron's formula
+      var p= perimeter/2;
+      var area= Math.sqrt(p*(p-num1)*(p-num2)*(p-num3)).toPrecision(3);
+      document.write("<h3>The Area is ", area);
+
+      }else{
+          return document.write("<h1>The side lengths don't make up a triangle, try again :)</h1>");
     }
 
 }
