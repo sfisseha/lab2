@@ -1,10 +1,40 @@
+
 .main-content{
   display:inline-block;
-  justify-content: center;
+  margin-left: 550px;
 }
-h1{
-  justify-content: center;
+
+h1, h3{
+  text-align: center;
 }
-form{
+
+.btn{
   justify-content: center;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.input{
+  justify-content: Center;
+  padding-top: 10px;
+}
+
+.skip {
+  position: absolute;
+  top: -1000px;
+  left: -1000px;
+  height: 1px;
+  width: 1px;
+  text-align: left;
+  overflow: hidden;
+}
+
+a.skip:active,
+a.skip:focus,
+a.skip:hover {
+    left: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+    overflow: visible;
 }
