@@ -49,7 +49,6 @@ function compareNum(){
         document.write("<h3> It is an right triangle</h3>");
       }
 
-
       var perimeter= num1 + num2 + num3;
       document.write("<h3>The perimeter is ", perimeter);
 
